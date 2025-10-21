@@ -9,12 +9,12 @@
             "program": "${fileDirname}"
         },
         {
-            "name": "Debug dbdriver main",
+            "name": "Debug Blog",
             "type": "go",
             "request": "launch",
             "mode": "debug",
-            "program": "${workspaceFolder}/DBDriver",
-            "cwd": "${workspaceFolder}"
+            "program": "${workspaceFolder}/Blog", // ← 指向目录，不是 main.go
+            "cwd": "${workspaceFolder}/Blog"
         }
     ]
 }
