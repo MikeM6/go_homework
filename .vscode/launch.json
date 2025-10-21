@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug single test (file)",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${fileDirname}"
+        },
+        {
+            "name": "Debug Blog",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "${workspaceFolder}/Blog", // ← 指向目录，不是 main.go
+            "cwd": "${workspaceFolder}/Blog"
+        }
+    ]
+}
